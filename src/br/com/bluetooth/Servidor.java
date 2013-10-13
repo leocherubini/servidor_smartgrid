@@ -190,6 +190,11 @@ public class Servidor extends Application {
         launch(args);
     }
     
+    /**
+     * Metodo responsavel por fazer a conexao do servidor com o dispositivo externo
+     * @return String
+     * @exception IOException
+     */
     private String conectar() {
         String conexao = "";
         
@@ -223,6 +228,11 @@ public class Servidor extends Application {
             return conexao;
     }
     
+    /**
+     * Classe responsavel pela leitura de dados
+     * @author Leonardo Cherubini
+     * @version 1.0
+     */
     private class Dados extends Thread {
         
         /* Variavel responsavel pela conexao bluetooth */
